@@ -1,0 +1,255 @@
+/* === PAGE HEADER === */
+.page-header {
+  background-image: url(" https://i.postimg.cc/y8HjDh5T/Tractors.png"); /* Replace with your preferred header image */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-header .overlay {
+  background-color: rgba(75, 0, 130, 0.7); /* Purple overlay */
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: white;
+  padding-top: 60px;
+}
+
+.page-header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #FFD700; /* Gold */
+}
+
+.breadcrumb {
+  color: #FFD700;
+  font-size: 14px;
+}
+
+.breadcrumb a {
+  color: white;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+/* === PRODUCTS SECTION === */
+.section {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+  background-color: #ffffff;
+}
+
+.section h2 {
+  font-size: 24px;
+  color: #4B0082; /* Purple */
+  margin-bottom: 30px;
+  font-weight: bold;
+  border-bottom: 2px solid #FFD700; /* Gold underline */
+  padding-bottom: 10px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.product-card {
+  background: #fff;
+  border: 2px solid #4B0082;
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  border-color: #FFD700;
+}
+
+.product-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.product-card h3 {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #4B0082;
+}
+
+.product-card p {
+  font-size: 14px;
+  color: #444;
+}
+.page-header {
+  position: relative;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.page-header .bg-left,
+.page-header .bg-right {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+.page-header .bg-left {
+  left: 0;
+  background-image: url('https://i.postimg.cc/0jKMf36J/detergent.webp');
+}
+
+.page-header .bg-right {
+  right: 0;
+  background-image: url('https://i.postimg.cc/y8HjDh5T/Tractors.png');
+}
+
+.page-header .overlay {
+  position: relative;
+  z-index: 2;
+  background-color: rgba(75, 0, 130, 0.7); /* Purple overlay */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding-top: 60px;
+  text-align: center;
+}
+
+/* keep your existing styles for h1, breadcrumb, etc */
+.page-header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #FFD700; /* Gold */
+}
+
+.breadcrumb {
+  color: #FFD700;
+  font-size: 14px;
+}
+
+.breadcrumb a {
+  color: white;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.8);
+}
+
+.modal-content {
+  background-color: white;
+  margin: 10% auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  border-radius: 10px;
+  border: 4px solid #4B0082;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+.modal-image {
+  width: 100%;
+  max-width: 300px;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+.close {
+  color: #4B0082;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+/* Tractor Modal Styling */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.8);
+}
+
+.modal-content.large-modal {
+  background-color: white;
+  margin: 5% auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 1000px;
+  border-radius: 10px;
+  border: 4px solid #4B0082;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+.modal-content h2 {
+  margin-bottom: 20px;
+  color: #4B0082;
+}
+
+.modal-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+.modal-gallery img {
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.modal-gallery img:hover {
+  transform: scale(1.05);
+}
+
+.close {
+  color: #4B0082;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
